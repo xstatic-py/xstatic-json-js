@@ -15,7 +15,9 @@ VERSION = '40f3377a63' # version of the packaged files, please use the upstream
                      # version number
 BUILD = '1' # our package build number, so we can release new builds
             # with fixes for xstatic stuff.
-PACKAGE_VERSION = VERSION + '.' + BUILD # version used for PyPi
+#PACKAGE_VERSION = VERSION + '.' + BUILD # version used for PyPi
+# as JSON-js has no release, we need to improvise:
+PACKAGE_VERSION = '0.0.0' + '.' + VERSION + '.' + BUILD # version used for PyPi
 
 DESCRIPTION = "%s %s (XStatic packaging standard)" % (DISPLAY_NAME, VERSION)
 
